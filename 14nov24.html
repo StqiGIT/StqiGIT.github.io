@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mario"></div>
+
+    <script>
+    let mario = 1;
+    for (let i = 0; i < 64; i++) {
+        mario *= 2;
+        console.log("<h4>Кусочки золота: Операция " + (i + 1) + ": " + mario + "</h4><br>");
+        }
+            
+        let mario2 = mario*0.000065    
+        console.log("<h3>Конечное кол-во кусочков золота " + ": " + mario2 + "</h3><br>");
+        let mario3 = mario*0.25
+        console.log("<h3>Кусочки золота в рублях " + ": " + mario3 + "</h3><br>");
+
+</script>
+
+</body>
+</html>
