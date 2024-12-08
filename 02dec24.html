@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        div {
+            color: yellow;
+            width: 45px;
+            height: 110px;
+            margin: 10px 0px 0px 10px;
+        }
+    </style>
+
+    <script>
+        let box = document.createElement('div'); 
+        box.style.backgroundColor = 'black';
+        document.body.append(box);
+
+        let height = 5;
+        let width = 3;
+        let choco = 15;
+
+        for(let k = 1; k <= height; k++) {
+            for (let i = 1; i <= width; i++) {
+                box.innerHTML += ('[]' + '  ');
+            }
+            box.innerHTML += ('<br>');
+        }
+        
+        if (choco <= height*width && (choco % 3 == 0 || choco % 5 == 0) ){
+            console.log('Вы сможете разделить шоколадку на ' + choco + ' ' + 'кусков')
+        }
+        else{
+            console.log('Вы не сможете разделить шоколадку на ' + choco + ' ' + 'кусков')
+        }    
+    </script>
+
+</body>
+</html>

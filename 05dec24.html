@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    let money = 1025;
+    console.log('У вас со счёта списали '+ (Math.floor(money / 100)) + ' ' + 'рублей ' + (money % 100) + ' ' + 'копеек');
+
+    let grams = 2200;
+    console.log('У вас в мешочке '+ (Math.floor(grams / 1000)) + ' ' + 'килограмм ' + (grams % 1000) + ' ' + 'грамм');
+
+    let seconds = 1892160000;
+    console.log('Вам осталось жить '+ (Math.floor(seconds / 3600)) + ' часов ' + (Math.floor((seconds/60)%60)) + ' минут ' + (Math.floor(seconds%60)) + ' секунд');
+
+    let rubles = 1025.31;
+    console.log('Ваши 1025.31'  + ' ' + 'рублей' +  ' ' + 'превратились в ' + (rubles*100) + " " + 'копеек');
+
+    тонн = 1;
+    килограмм = 30;
+    грамм = 50;
+    console.log('Ваши ' + тонн + " " + 'тонн ' + килограмм + ' ' + 'килограмм ' + грамм + ' ' + 'грамм ' + 'превратились в ' + ((тонн * 1000) + (килограмм * 100) + грамм) + ' грамм');
+    
+    суток = 15;
+    часов = 7;
+    минут = 43;
+    секунд = 5;
+    console.log(суток + " " + 'суток' + " " + часов + " " + 'часов' + " " + минут + " " + 'минут' + " " + секунд + " " + 'секунд' +  " " + '=' + " " + (((((суток * 24 + часов)*60) + минут) * 60) + секунд) + ' ' + 'секунд');
+
+    </script>
+
+</body>
+</html>
