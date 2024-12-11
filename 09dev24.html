@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a1 = 3;
+        let b1 = 3;
+        let a2 = 2;
+        let b2 = 3;
+        if( a1 == a2 || b1 == b2) {
+            console.log("Ладья смогла дойти" + "<br>" + "<br>")
+        }
+        else{
+            console.log("Ладья не справилась с управлением" + "<br>" + "<br>")
+        }
+        let c1 = 2;
+        let d1 = 2;
+        let c2 = 1;
+        let d2 = 1;
+        if(Math.abs(c1 - c2)==Math.abs(d1 - d2)) {
+            console.log("Слон смог дойти" + "<br>" + "<br>")
+        }
+        else{
+            console.log("Слона перекосило, он не дошёл" + "<br>" + "<br>")
+        }
+
+        let f1 = 1;
+        let g1 = 1;
+        let f2 = 2;
+        let g2 = 3;
+        if(Math.abs(f1 - f2) == 1 && Math.abs(g1 - g2) == 2 || Math.abs(f1 - f2) == 2 && Math.abs(g1 - g2) == 1) {
+            console.log("Конь смог дойти" + "<br>" + "<br>")
+        }
+        else{
+            console.log("Коня угнали цыгане, он не дошёл" + "<br>" + "<br>")
+        }
+    </script>
+
+</body>
+</html>
