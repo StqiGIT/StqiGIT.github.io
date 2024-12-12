@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let height = prompt('Высота елочки')
+
+        function christmas(n) {
+            let tree = '';
+            for (let i = 1; i <= n; i++) {
+                for (let j=0; j <= n-i; j++) {
+                    tree += ' ';
+                }
+                for (k = 0; k< (i*2)-1; k++) {
+                    tree += '*';
+                }
+                tree += '\n';
+            }
+        return tree;
+        }
+        console.log(christmas(height));
+    </script>
+</body>
+</html>
